@@ -18,7 +18,7 @@ class ServiceRecipe (val recipeRepository:RecipeRepository) {
 
         return recipeEntity.let {
             RecipeDTO(
-                id = null,
+                id = it.id,
                 title = it.title,
                 ingredients = it.ingredients,
                 steps = it.steps
